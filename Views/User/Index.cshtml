@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Aura.Models.User>
+
+<h1>Usuarios</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Role</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Username</td>
+                <td>@user.Role</td>
+                <td>
+                    <a href="@Url.Action("Delete", "User", new { id = user.Id })">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="@Url.Action("Create", "User")">Crear Nuevo Usuario</a>

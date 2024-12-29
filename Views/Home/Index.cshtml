@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Bienvenido a Aura</h1>
+
+<p>Lista de usuarios:</p>
+<ul>
+    @foreach (var user in Model)
+    {
+        <li>@user.Name (@user.Email)</li>
+    }
+</ul>
