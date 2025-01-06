@@ -1,2 +1,4 @@
 # Aura
- Gestor de roles y permisos de usuario.
+
+ Trabajo en progreso.
+ Ahora, con una pequeña pausa...
